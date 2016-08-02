@@ -1,18 +1,1 @@
-/**
- * Created by hand on 8/2 0002.
- */
-(function (window) {
-    window.onload = function () {
-        //吃小球loading
-        var eat_ball = document.querySelectorAll('.eat-ball')[0];
-        if(eat_ball){
-            eat_ball.innerHTML = "<div></div><div></div><div></div><div></div>";
-        }
-        //九宫格小球
-        var ball_grid_pulse = document.querySelectorAll('.ball-grid-pulse')[0];
-        ball_grid_pulse ? ball_grid_pulse.innerHTML = "<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>" : '';
-        //三个小点
-        var ball_pulse = document.querySelectorAll('.ball-pulse')[0];
-        ball_pulse ? ball_pulse.innerHTML = "<div></div><div></div><div></div>" : '';
-    }
-})(window);
+(function(a){a.onload=function(){var c=document.querySelectorAll(".eat-ball")[0];if(c){c.innerHTML="<div></div><div></div><div></div><div></div>"}var h=document.querySelectorAll(".ball-grid-pulse")[0];h?h.innerHTML="<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>":"";var e=document.querySelectorAll(".ball-pulse")[0];e?e.innerHTML="<div></div><div></div><div></div>":"";var b=document.querySelectorAll(".cricle-point")[0];if(b){b.innerHTML="<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>";var b=document.querySelectorAll(".cricle-point")[0].children;for(var g=0;g<b.length;g++){b[g].style.transform="rotate("+g*45+"deg)";b[g].style.webkitTransform="rotate("+g*45+"deg)";b[g].style.webkitAnimation="rotate-cricle 1.2s linear infinite 0."+g+"s";b[g].style.animation="rotate-cricle 1.2s linear infinite 0."+g+"s"}}var d=document.querySelectorAll(".cricle-line")[0];if(d){d.innerHTML="<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>";for(var g=0;g<d.children.length;g++){d.children[g].style.webkitTransform="rotate("+g*45+"deg)";d.children[g].style.transform="rotate("+g*45+"deg)";d.children[g].style.webkitAnimation="cricle-line 1.2s linear infinite 0."+g+"s";d.children[g].style.animation="cricle-line 1.2s linear infinite 0."+g+"s"}}var f=document.querySelectorAll(".line-telescopic")[0];f?f.innerHTML="<div></div><div></div><div></div><div></div><div></div>":""}})(window);
